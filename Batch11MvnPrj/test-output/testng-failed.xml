@@ -3,16 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ap.tests.CartTest">
+      <class name="com.ap.tests.LoginTest">
         <methods>
           <include name="launchBrowser"/>
           <include name="aftersuite"/>
+          <include name="testinValidLogin"/>
           <include name="init"/>
           <include name="beforeSuite"/>
-          <include name="Testwishlist"/>
+          <include name="afterMethod"/>
           <include name="terminate"/>
         </methods>
-      </class> <!-- com.ap.tests.CartTest -->
+      </class> <!-- com.ap.tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

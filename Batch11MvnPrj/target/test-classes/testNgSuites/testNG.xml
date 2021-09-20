@@ -4,7 +4,6 @@
 <suite name="Smoke">
 	<listeners>
 		<listener class-name="utils.TestListener" />
-		<listener class-name="utils.RetryListener" />
 	</listeners>
 	<test name="Login">
 		<classes>

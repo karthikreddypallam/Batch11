@@ -12,7 +12,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<selenium-version>3.141.59</selenium-version>
 		<testng-version>7.4.0</testng-version>
-		<log4j-version>2.14.1</log4j-version>		
+		<log4j-version>2.14.1</log4j-version>
 		<commonsio-version>2.11.0</commonsio-version>
 		<extentreports-version>3.1.5</extentreports-version>
 		<maven-surefire-plugin-version>3.0.0-M5
@@ -58,20 +58,77 @@
 			<version>${log4j-version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.1</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>1.2.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>1.2.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-jvm-deps</artifactId>
+			<version>1.0.5</version>
+		</dependency>
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>1.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>gherkin</artifactId>
+			<version>2.12.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>2.0.2-beta</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/cobertura/cobertura -->
+		<dependency>
+			<groupId>cobertura</groupId>
+			<artifactId>cobertura</artifactId>
+			<version>1.8</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.12.5</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.12.5</version>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>
 		<plugins>
 
-		<!-- 	<plugin>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
-				<configuration>
-					<fork>true</fork>
-					<executable>/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/bin/javac
-					</executable>
-				</configuration>
-			</plugin> -->
+			<!-- <plugin> <artifactId>maven-compiler-plugin</artifactId> <version>3.8.1</version> 
+				<configuration> <fork>true</fork> <executable>/Library/Java/JavaVirtualMachines/jdk1.8.0_291.jdk/Contents/Home/bin/javac 
+				</executable> </configuration> </plugin> -->
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
