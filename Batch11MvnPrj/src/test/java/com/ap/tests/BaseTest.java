@@ -11,6 +11,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.ITestResult;
@@ -86,6 +87,11 @@ public class BaseTest {
 	public void openFirefox() {
 		System.setProperty("webdriver.gecko.driver", Iconstants.firefoxDriverPath);
 		driver = new FirefoxDriver();
+	}
+	
+	public void openEdge() {
+		System.setProperty("webdriver.edge.driver", Iconstants.edgeDriverPath);
+		driver = new EdgeDriver();
 	}
 
 	public boolean isElementPresent(WebElement ele) {
