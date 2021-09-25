@@ -8,8 +8,10 @@
           <include name="launchBrowser"/>
           <include name="aftersuite"/>
           <include name="testinValidLogin"/>
+          <include name="testValidLogin"/>
           <include name="init"/>
           <include name="beforeSuite"/>
+          <include name="testEmptyLogin"/>
           <include name="afterMethod"/>
           <include name="terminate"/>
         </methods>
