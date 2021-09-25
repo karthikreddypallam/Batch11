@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -33,6 +34,8 @@ import utils.ConfigReader;
 import utils.Iconstants;
 
 public class BaseTest {
+	
+	private static Logger logger = Logger.getLogger(BaseTest.class);
 
 	public WebDriver driver = null;
 	ConfigReader cfgRdr = null;
@@ -45,11 +48,16 @@ public class BaseTest {
 	
 	@BeforeMethod
 	public void init(ITestResult result) {
+		logger.info("Creating Extent Reports");
 		test = reports.createTest(result.getMethod().getMethodName());
 		hp = new HomePage(driver);
 		lp = new LoginPage(driver);
 		test.info("Browser Launched");
+		logger.info("Browser Launched");
+
 		test.info("Launched Home Page");
+		logger.info("Launched Home Page");
+
 	}
 	
 	@BeforeSuite
